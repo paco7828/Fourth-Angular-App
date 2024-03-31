@@ -1,0 +1,32 @@
+<div class="form-container">
+    <h1>Add note</h1>
+    <form [formGroup]="noteForm" (submit)="handleSubmit()">
+        <input name="note-heading" type="text" placeholder="Note's heading..." formControlName="noteHeading">
+        <textarea cols="30" rows="10" placeholder="Note's description..." name="note-description"
+            formControlName="noteDescription"></textarea>
+        <input type="submit" value="Add note">
+    </form>
+</div>
+<div id="notes-container">
+    <div class="note-div">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ipsa saepe eveniet blanditiis incidunt
+            distinctio amet animi tempora repellendus a accusamus iste hic temporibus officiis, accusantium est.
+            Distinctio, ullam veritatis?</p>
+        <button (click)="deleteNote($event)">Delete note</button>
+    </div>
+    <div class="note-div">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ipsa saepe eveniet blanditiis incidunt
+            distinctio amet animi tempora repellendus a accusamus iste hic temporibus officiis, accusantium est.
+            Distinctio, ullam veritatis?</p>
+        <button (click)="deleteNote($event)">Delete note</button>
+    </div>
+    <div class="note-div">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ipsa saepe eveniet blanditiis incidunt
+            distinctio amet animi tempora repellendus a accusamus iste hic temporibus officiis, accusantium est.
+            Distinctio, ullam veritatis?</p>
+        <button (click)="deleteNote($event)">Delete note</button>
+    </div>
+</div>
